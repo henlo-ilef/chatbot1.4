@@ -1,8 +1,6 @@
 import streamlit as st
 import os
 from external_search import external_search
-from reportlab.lib.pagesizes import letter
-from reportlab.pdfgen.canvas import Canvas
 import pickle 
 from pathlib import Path
 import streamlit_authenticator as stauth
