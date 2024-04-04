@@ -94,7 +94,7 @@ if authentication_status:
         # Add the assistant's response to chat history
         st.session_state.messages.append({"role": "assistant", "content": response})
     
-        st.download_button("Download", response, file_name="benchmark_study.pdf", mime="application/pdf")
+        st.download_button("Download", response)
 
 
 
