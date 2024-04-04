@@ -6,11 +6,6 @@ from reportlab.pdfgen.canvas import Canvas
 import pickle 
 from pathlib import Path
 import streamlit_authenticator as stauth
-from reportlab.lib.pagesizes import letter
-from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer
-from reportlab.lib.styles import getSampleStyleSheet
-from reportlab.lib.enums import TA_CENTER
-from io import BytesIO
 st.set_page_config(page_title="💬PPP Benchmark studies Chatbot Prototype")
 
 
@@ -60,13 +55,6 @@ if authentication_status:
         st.sidebar.title(f"Welcome {name}")
         st.title('💬PPP Benchmark studies Chatbot')
         st.write('This chatbot is created using the open-source Mistral and RAG.')
-
-        # Add two buttons to the sidebar
-        if st.button("Questions about existing documents"):
-            # Mark the button as clicked
-            st.session_state.questions_button_clicked = True
-            # Add a message to the chat history
-            st.session_state.messages.append({"role": "assistant", "content": "What questions do you have about existing documents?"})
 
         if st.button("Conduct new benchmark studies"):
             # Mark the button as clicked
