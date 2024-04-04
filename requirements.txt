@@ -1,0 +1,6 @@
+streamlit 
+langchain
+langchain_core
+langchain_google_genai
+langchain_exa
+streamlit_authenticator==0.1.5
