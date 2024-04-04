@@ -11,7 +11,7 @@ from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer
 from reportlab.lib.styles import getSampleStyleSheet
 from reportlab.lib.enums import TA_CENTER
 from io import BytesIO
-st.set_page_config(page_title="💬PPP Benchmark studies Chatbot")
+st.set_page_config(page_title="💬PPP Benchmark studies Chatbot Prototype")
 
 
 # --- USER AUTHENTIFICATION ---
@@ -93,8 +93,8 @@ if authentication_status:
         st.session_state.messages.append({"role": "user", "content": prompt})
 
         # Call the appropriate function based on the context
-        if st.session_state.conduct_button_clicked:
-            response = external_search(prompt)
+      
+        response = external_search(prompt)
             
 
 
